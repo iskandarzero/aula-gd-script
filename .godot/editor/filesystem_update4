@@ -1,0 +1,5 @@
+res://Scenes/World/world.tscn
+res://Utility/enemy_spawner.tscn
+res://Scenes/Player/Attack/ice_spear.tscn
+res://Scenes/Player/player.tscn
+res://Scenes/Enemy/Kobold Weak/enemy_kobold_weak.tscn

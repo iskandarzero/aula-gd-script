@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbbldoah138sd"]
+
+[ext_resource type="Texture2D" uid="uid://dx7pqfgj1rdal" path="res://Textures/dirt_full_new.png" id="1_wx8rb"]
+[ext_resource type="PackedScene" uid="uid://dkjnvnn8w6fyq" path="res://Scenes/Player/player.tscn" id="2_2m6bp"]
+[ext_resource type="PackedScene" uid="uid://di5grpiqvrqkb" path="res://Utility/enemy_spawner.tscn" id="3_c3geq"]
+
+[node name="World" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(136, 81)
+texture = ExtResource("1_wx8rb")
+region_enabled = true
+region_rect = Rect2(-4000, -4000, 4000, 4000)
+
+[node name="Player" parent="." instance=ExtResource("2_2m6bp")]
+position = Vector2(269, 26)
+
+[node name="EnemySpawner" parent="." instance=ExtResource("3_c3geq")]
